@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>C Documentation</title>
+     <link rel="stylesheet" href="Cdocx.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>
+            <h2>Navigation</h2>
+        </header>
+        <a class="nav-link" href="#C_Basics">C Basics</a>
+        <a class="nav-link" href="#cVariablesandConstants">C Variables and Constants</a>
+        <a class="nav-link" href="#cDataTypes">C Data Types</a>
+        <a class="nav-link" href="#cInputOutput">C Input/Output</a>
+        <a class="nav-link" href="#cOperators">C Operators</a>
+        <a class="nav-link" href="#cControlStatements">C Control Statements</a>
+        <a class="nav-link" href="#functions">Functions</a>
+        <a class="nav-link" href="#arraysAndStrings">Arrays & Strings</a>
+        <a class="nav-link" href="#pointers">Pointers</a>
+        <a class="nav-link" href="#userDefinedDataTypes">User-Defined Data Types</a>
+        <a class="nav-link" href="#memoryManagement">Memory Management</a>
+        <a class="nav-link" href="#preprocessor">Preprocessor</a>
+        <a class="nav-link" href="#fileHandling">File Handling</a>
+        <a class="nav-link" href="#miscellaneous">Miscellaneous</a>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="C_Basics">
+            <header>
+                <h1>C Basics</h1>
+            </header>
+            <p>C is a powerful programming language known for its efficiency and low-level control. Here's a basic "Hello, World!" program:</p>
+            <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+   printf("Hello, World!\n");
+   return 0;
+}
+            </pre>
+            <ul>
+                <li><code>#include &lt;stdio.h&gt;</code>: This line includes the standard input/output library.</li>
+                <li><code>int main()</code>: Defines the main function, where program execution begins.</li>
+                <li><code>printf("Hello, World!\n")</code>: Prints "Hello, World!" to the console.</li>
+                <li><code>return 0;</code>: Indicates successful execution.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="cVariablesandConstants">
+            <header>
+                <h1>C Variables and Constants</h1>
+            </header>
+            <h2>Variables</h2>
+            <p>In C, variables are used to store data. They must be declared with their data types and can be initialized with values. Example:</p>
+            <pre>
+int age = 25;
+double price = 19.99;
+char initial = 'M';
+            </pre>
+            <h2>Data Types</h2>
+            <p>C provides various data types such as <code>int</code>, <code>double</code>, <code>char</code>, and <code>float</code> for storing different types of data.</p>
+            <pre>
+int num = 42;
+double pi = 3.14159;
+char grade = 'A';
+float weight = 68.5;
+            </pre>
+            <h2>Constants</h2>
+            <p>You can declare constants using the <code>const</code> keyword:</p>
+            <pre>
+const int MAX_VALUE = 100;
+            </pre>
+            <p>Constants are values that do not change during the program's execution.</p>
+        </section>
+
+        <section class="main-section" id="cDataTypes">
+            <header>
+                <h1>C Data Types</h1>
+            </header>
+            <p>C provides several data types for storing different kinds of information:</p>
+            <ul>
+                <li><code>int</code>: Integer data type.</li>
+                <li><code>double</code>: Double-precision floating-point.</li>
+                <li><code>char</code>: Character data type.</li>
+                <li><code>float</code>: Single-precision floating-point.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="cInputOutput">
+            <header>
+                <h1>C Input/Output</h1>
+            </header>
+            <p>In C, you can use functions like <code>printf</code> and <code>scanf</code> for input and output operations. Here's an example:</p>
+            <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+   int number;
+   printf("Enter a number: ");
+   scanf("%d", &number);
+   printf("You entered: %d\n", number);
+   return 0;
+}
+            </pre>
+            <ul>
+                <li><code>printf</code>: Used to print data to the console.</li>
+                <li><code>scanf</code>: Used to read data from the user.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="cOperators">
+            <header>
+                <h1>C Operators</h1>
+            </header>
+            <p>C supports various operators for performing operations on data:</p>
+            <ul>
+                <li>Arithmetic Operators (+, -, *, /, %)</li>
+                <li>Assignment Operators (=, +=, -=, *=, /=, %=)</li>
+                <li>Comparison Operators (==, !=, >, <, >=, <=)</li>
+                <li>Logical Operators (&&, ||, !)</li>
+                <li>Bitwise Operators (&, |, ^, ~, <<, >>)</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="cControlStatements">
+            <header>
+                <h1>C Control Statements</h1>
+            </header>
+            <p>C provides control statements for decision-making and looping:</p>
+            <ul>
+                <li><code>if</code> Statements</li>
+                <li><code>else</code> Statements</li>
+                <li><code>switch</code> Statements</li>
+                <li><code>while</code> Loops</li>
+                <li><code>for</code> Loops</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="functions">
+            <header>
+                <h1>Functions</h1>
+            </header>
+            <p>Functions are blocks of code that can be called to perform specific tasks. They help in organizing code and promoting reusability. Here's a simple function example:</p>
+            <pre>
+#include &lt;stdio.h&gt;
+
+int add(int a, int b) {
+   return a + b;
+}
+
+int main() {
+   int result = add(5, 3);
+   printf("Sum: %d\n", result);
+   return 0;
+}
+            </pre>
+            <ul>
+                <li><code>add</code>: This is a user-defined function that takes two integers and returns their sum.</li>
+                <li><code>main</code>: The <code>main</code> function is where program execution begins.</li>
+            </ul>
+        </section>
+        
+        <section class="main-section" id="arraysAndStrings">
+            <header>
+                <h1>Arrays & Strings</h1>
+            </header>
+            <p>Arrays allow you to store multiple values of the same data type in a single variable. Strings are essentially arrays of characters in C. Here's an example:</p>
+            <pre>
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+int main() {
+   int numbers[5] = {1, 2, 3, 4, 5};
+   char greeting[] = "Hello, World!";
+   
+   printf("Third number: %d\n", numbers[2]);
+   printf("Greeting: %s\n", greeting);
+   
+   return 0;
+}
+            </pre>
+            <ul>
+                <li><code>numbers</code>: An integer array storing five numbers.</li>
+                <li><code>greeting</code>: A character array (string) containing "Hello, World!".</li>
+            </ul>
+        </section>
+        
+        <section class="main-section" id="pointers">
+            <header>
+                <h1>Pointers</h1>
+            </header>
+            <p>Pointers are variables that store memory addresses. They are used for dynamic memory allocation and can be powerful but require careful handling. Here's a basic example:</p>
+            <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+   int num = 42;
+   int* ptr = &num;
+   
+   printf("Value of num: %d\n", num);
+   printf("Value pointed by ptr: %d\n", *ptr);
+   
+   return 0;
+}
+            </pre>
+            <ul>
+                <li><code>num</code>: An integer variable with the value 42.</li>
+                <li><code>ptr</code>: A pointer variable that stores the address of <code>num</code>.</li>
+            </ul>
+        </section>
+        
+        <section class="main-section" id="userDefinedDataTypes">
+            <header>
+                <h1>User-Defined Data Types</h1>
+            </header>
+            <p>In C, you can create your own data types using structures and typedef. These user-defined data types help in organizing complex data. Example:</p>
+            <pre>
+#include &lt;stdio.h&gt;
+
+struct Person {
+   char name[50];
+   int age;
+};
+
+typedef struct Person Person;
+
+int main() {
+   Person person1;
+   strcpy(person1.name, "John");
+   person1.age = 30;
+   
+   printf("Name: %s\n", person1.name);
+   printf("Age: %d\n", person1.age);
+   
+   return 0;
+}
+            </pre>
+            <ul>
+                <li><code>Person</code>: A user-defined data type representing a person's name and age.</li>
+            </ul>
+        </section>
+        
+        <section class="main-section" id="memoryManagement">
+            <header>
+                <h1>Memory Management</h1>
+            </header>
+            <p>C allows manual memory allocation and deallocation using <code>malloc</code> and <code>free</code> functions from the <code>stdlib.h</code> library. Here's an example:</p>
+            <pre>
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+int main() {
+   int* nums = (int*)malloc(5 * sizeof(int));
+   
+   if (nums == NULL) {
+       printf("Memory allocation failed.");
+       return 1;
+   }
+   
+   for (int i = 0; i &lt; 5; i++) {
+       nums[i] = i * 10;
+   }
+   
+   for (int i = 0; i &lt; 5; i++) {
+       printf("nums[%d]: %d\n", i, nums[i]);
+   }
+   
+   free(nums);
+   
+   return 0;
+}
+            </pre>
+            <ul>
+                <li><code>malloc</code>: Allocates memory dynamically for an array of integers.</li>
+                <li><code>free</code>: Releases the allocated memory when it's no longer needed.</li>
+            </ul>
+        </section>
+        
+        <section class="main-section" id="preprocessor">
+            <header>
+                <h1>Preprocessor</h1>
+            </header>
+            <p>The C preprocessor performs text replacement in your code before compilation. It's commonly used for including header files, defining macros, and conditional compilation. Here's an example:</p>
+            <pre>
+#include &lt;stdio.h&gt;
+
+#define SQUARE(x) ((x) * (x))
+
+int main() {
+   int num = 5;
+   int result = SQUARE(num);
+   
+   printf("Square of %d is %d\n", num, result);
+   
+   return 0;
+}
+            </pre>
+            <ul>
+                <li><code>#include</code>: Preprocessor directive used to include standard libraries.</li>
+                <li><code>#define</code>: Used to define macros, like <code>SQUARE</code> in this example.</li>
+            </ul>
+        </section>
+        
+        <section class="main-section" id="fileHandling">
+            <header>
+                <h1>File Handling</h1>
+            </header>
+            <p>C provides file handling functions to work with files on your system. You can open, read, write, and close files. Here's an example of reading a file:</p>
+            <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+   FILE* file = fopen("sample.txt", "r");
+   if (file == NULL) {
+       printf("File not found.\n");
+       return 1;
+   }
+   
+   char buffer[100];
+   while (fgets(buffer, sizeof(buffer), file) != NULL) {
+       printf("%s", buffer);
+   }
+   
+   fclose(file);
+   
+   return 0;
+}
+            </pre>
+            <ul>
+                <li><code>fopen</code>: Opens a file for reading ("<code>r</code>" mode in this case).</li>
+                <li><code>fgets</code>: Reads lines from the file.</li>
+                <li><code>fclose</code>: Closes the file when done.</li>
+            </ul>
+        </section>
+        
+        <section class="main-section" id="miscellaneous"
+                <header>
+                <h1>Miscellaneous</h1>
+            </header>
+            <h2>Loops in C</h2>
+            <p>C provides several loop constructs for repetitive tasks:</p>
+            <ul>
+                <li><code>while</code> loop: Executes a block of code while a condition is true.</li>
+                <li><code>for</code> loop: Executes a block of code for a specified number of iterations.</li>
+                <li><code>do...while</code> loop: Similar to a <code>while</code> loop but ensures at least one execution.</li>
+            </ul>
+            <p>Example of a <code>for</code> loop:</p>
+            <pre>
+        #include &lt;stdio.h&gt;
+        
+        int main() {
+           for (int i = 0; i &lt; 5; i++) {
+               printf("Iteration %d\n", i);
+           }
+           return 0;
+        }
+            </pre>
+        
+            <h2>Strings in C</h2>
+            <p>Strings in C are arrays of characters. The C Standard Library provides functions for string manipulation:</p>
+            <ul>
+                <li><code>strlen</code>: Calculates the length of a string.</li>
+                <li><code>strcpy</code>: Copies one string to another.</li>
+                <li><code>strcat</code>: Concatenates two strings.</li>
+                <li><code>strcmp</code>: Compares two strings.</li>
+                <li><code>strchr</code>: Searches for a character in a string.</li>
+                <li><code>strstr</code>: Searches for a substring in a string.</li>
+            </ul>
+            <p>Example of using <code>strlen</code>:</p>
+            <pre>
+        #include &lt;stdio.h&gt;
+        #include &lt;string.h&gt;
+        
+        int main() {
+           char str[] = "Hello, World!";
+           int length = strlen(str);
+           printf("Length of the string: %d\n", length);
+           return 0;
+        }
+            </pre>
+            <h2>Bit Manipulation</h2>
+            <p>Bit manipulation involves working with individual bits in a binary representation of data. In C, you can perform operations like setting, clearing, toggling, and checking individual bits. This is often used in low-level programming and optimization tasks.</p>
+            <h2>Dynamic Memory Allocation</h2>
+            <p>Dynamic memory allocation allows you to allocate and deallocate memory at runtime using functions like <code>malloc()</code>, <code>calloc()</code>, and <code>free()</code>. This is crucial for managing memory efficiently and creating data structures like linked lists, trees, and dynamic arrays.</p>
+            <h2>Command-Line Arguments</h2>
+            <p>Command-line arguments are parameters passed to a C program when it's executed from the command line. You can access these arguments in your program to customize its behavior based on user input. The <code>main()</code> function can accept arguments like <code>argc</code> (argument count) and <code>argv</code> (argument vector).</p>
+            <h2>Multi-dimensional Arrays</h2>
+            <p>Multi-dimensional arrays in C are used to represent tables of data with more than one dimension. They are commonly used for matrices and other structured data. You can declare and manipulate multi-dimensional arrays using nested arrays.</p>
+            <h2>Recursion</h2>
+            <p>Recursion is a programming technique where a function calls itself to solve a problem. In C, recursion can be used for tasks like traversing trees and graphs or solving problems that can be divided into smaller, similar subproblems.</p>
+            <h2>History of C</h2>
+            <p>C is a general-purpose programming language developed at Bell Labs in the early 1970s by Dennis Ritchie. It was created as a successor to the B programming language and was originally designed for system programming and to develop the UNIX operating system.</p>
+            <p>C gained popularity for its efficiency, portability, and simplicity. In 1983, the American National Standards Institute (ANSI) standardized the C language, leading to ANSI C. Later, the International Organization for Standardization (ISO) adopted the ANSI C standard, creating the ISO C standard.</p>
+            <p>C has influenced many programming languages, including C++, C#, and Objective-C. It remains a fundamental language in the field of computer science and software development.</p>
+</section>
+ </main>
+ </body>
+ <footer>
+      <h1>For a more in-depth look at C,visit this websites: </h1>
+        <a href="https://www.w3schools.com/c/index.php">w3schools</a>
+        <a href="https://www.geeksforgeeks.org/c-programming-language/?ref=shm_outind">geeksforgeeks</a>
+        <a href="https://www.codecademy.com/learn/paths/c">codecademy</a>
+        <a href="https://www.learn-c.org/">c.org</a>
+        <a href="https://learn.microsoft.com/en-us/cpp/?view=msvc-170">Microsoft</a>
+    </footer>
+</html>

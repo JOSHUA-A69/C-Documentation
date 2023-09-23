@@ -1,0 +1,105 @@
+body, h1, h2, p, ul, pre {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 20px;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+header {
+    background-color: gray;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#navbar {
+    background-color: #444;
+    padding: 10px;
+}
+
+.nav-link {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.nav-link:hover {
+    background-color: #555;
+}
+
+#main-doc {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.main-section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+pre {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+footer {
+background-color: gray; /* Background color for the footer */
+color: #fff; /* Text color for the footer */
+padding: 20px; /* Padding around the content in the footer */
+text-align: center; /* Center-align the content within the footer */
+}
+
+/* Style for the links in the footer */
+footer a {
+color: #fff; /* Text color for the links */
+text-decoration: none; /* Remove underlines from the links */
+margin: 0 10px; /* Add some spacing between the links */
+}
+
+/* Style for the links on hover */
+footer a:hover {
+text-decoration: underline; /* Add underline on hover */
+}
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    #navbar {
+        padding: 5px;
+    }
+    .nav-link {
+        padding: 3px;
+    }
+    #main-doc {
+        padding: 10px;
+    }
+    .main-section {
+        padding: 10px;
+    }
+    pre {
+        padding: 5px;
+    }
+}
