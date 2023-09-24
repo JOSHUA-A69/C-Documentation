@@ -96,13 +96,13 @@ footer a:hover {
         padding: 8px; /* Slightly larger padding for mobile links */
     }
     #main-doc {
-        padding: 50ppx;
+        padding: 20ppx;
     }
     .main-section {
-        padding: 50px;
+        padding: 20px;
     }
     pre {
-        padding: 50px;
+        padding: 8px;
     }
     h1, h2 {
         font-size: 11px; /* Adjust heading font size for mobile */
