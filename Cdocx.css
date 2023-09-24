@@ -88,8 +88,8 @@ footer a:hover {
 @media (max-width: 768px) {
     body {
         font-size: 8px; /* Smaller font size for mobile */
-        padding:20px;
-        margin:20px;
+        padding: 20px;
+        margin: 20px;
     }
     #navbar {
         padding: 5px;
@@ -98,7 +98,7 @@ footer a:hover {
         padding: 8px; /* Slightly larger padding for mobile links */
     }
     #main-doc {
-        padding: 20ppx;
+        padding: 20px;
         margin: 20px;
     }
     .main-section {
@@ -106,12 +106,13 @@ footer a:hover {
         margin: 20px;
     }
     pre {
-       padding: 20px;
-      font-size: 7px;
-      text-align: left;
-}
-     
-      h1, h2 {
-        font-size: 11px; /* Adjust heading font size for mobile */
+        padding: 10px; /* Adjusted padding for better readability */
+        font-size: 12px; /* Smaller font size for code blocks */
+        overflow-x: auto; /* Add horizontal scrolling for long code lines */
+    }
+
+    h1, h2 {
+        font-size: 16px; /* Adjust heading font size for mobile */
     }
 }
+
