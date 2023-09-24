@@ -99,7 +99,8 @@ footer a:hover {
         padding: 10ppx;
     }
     .main-section {
-        padding: 10px;
+        padding: 20px;
+        margin: 20px;
     }
     pre {
        padding: 8px;
