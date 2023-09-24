@@ -102,15 +102,12 @@ footer a:hover {
         padding: 10px;
     }
     pre {
-        padding: 8px;
-    }
-   
-  pre{
-     font-style:italic;
-     font-size:xxx-small;
-     text-align: start;
+       padding: 8px;
+      font-size:xxx-small;
+      text-align: start;
 }
-    h1, h2 {
+     
+      h1, h2 {
         font-size: 11px; /* Adjust heading font size for mobile */
     }
 }
