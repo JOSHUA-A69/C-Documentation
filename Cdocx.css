@@ -103,8 +103,12 @@ footer a:hover {
     }
     pre {
         padding: 8px;
-        font-size:11px;
     }
+   
+  pre{
+     font-style:italic;
+     font-size:xxx-small;
+}
     h1, h2 {
         font-size: 11px; /* Adjust heading font size for mobile */
     }
